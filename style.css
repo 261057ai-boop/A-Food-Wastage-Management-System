@@ -1,0 +1,250 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f7f9f6;
+    color: #333;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #176b3a;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #ffe082;
+}
+
+/* Home Section */
+.hero {
+    min-height: 430px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)
+    ), url("https://images.unsplash.com/photo-1547592180-85f173990554?w=1400")
+    center/cover no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+}
+
+.hero-content h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 650px;
+    margin: auto;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    background-color: #ffb300;
+    color: #222;
+    padding: 13px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #f5c64c;
+}
+
+/* Common Sections */
+section {
+    padding: 55px 8%;
+    text-align: center;
+}
+
+section h2 {
+    color: #176b3a;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+/* About */
+.about p {
+    max-width: 850px;
+    margin: auto;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* Steps */
+.steps {
+    background-color: #e9f5ec;
+}
+
+.step-container,
+.food-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.step {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    width: 260px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.step h3 {
+    color: #176b3a;
+    margin-bottom: 15px;
+}
+
+.step p {
+    line-height: 1.6;
+}
+
+/* Donation Form */
+.donate {
+    background-color: white;
+}
+
+.donate form {
+    max-width: 550px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+form button {
+    background-color: #176b3a;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0e512a;
+}
+
+#message {
+    color: #176b3a;
+    font-weight: bold;
+}
+
+/* Food Categories */
+.food-card {
+    background-color: white;
+    width: 250px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.food-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.food-card h3 {
+    color: #176b3a;
+    margin-bottom: 12px;
+}
+
+.food-card p {
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    background-color: #124b2c;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+    line-height: 2;
+}
+
+footer h2 {
+    color: #ffca54;
+}
+
+.copyright {
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        text-align: center;
+        line-height: 2.5;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+}
